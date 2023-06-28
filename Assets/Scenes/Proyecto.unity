@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 77535572}
   - component: {fileID: 77535571}
   - component: {fileID: 77535570}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cubo (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -240,7 +240,7 @@ GameObject:
   - component: {fileID: 136825750}
   - component: {fileID: 136825749}
   - component: {fileID: 136825748}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cubo (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -345,7 +345,7 @@ GameObject:
   - component: {fileID: 431554734}
   - component: {fileID: 431554733}
   - component: {fileID: 431554732}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cubo (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -481,7 +481,7 @@ GameObject:
   - component: {fileID: 796145041}
   - component: {fileID: 796145040}
   - component: {fileID: 796145039}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cubo (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -652,7 +652,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 883796021}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 3.01, y: 3.11, z: -1.182}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -702,6 +702,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterController: {fileID: 883796026}
   speed: 12
+  groundCheck: {fileID: 670250577}
+  sphereRadius: 0.3
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 64
+  jumpHeight: 3
 --- !u!1 &955409048
 GameObject:
   m_ObjectHideFlags: 0
@@ -714,7 +720,7 @@ GameObject:
   - component: {fileID: 955409051}
   - component: {fileID: 955409050}
   - component: {fileID: 955409049}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plano
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -820,7 +826,7 @@ GameObject:
   - component: {fileID: 1161461899}
   - component: {fileID: 1161461898}
   - component: {fileID: 1161461897}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cubo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -925,7 +931,7 @@ GameObject:
   - component: {fileID: 1284935494}
   - component: {fileID: 1284935493}
   - component: {fileID: 1284935492}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cubo (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1242,7 +1248,7 @@ GameObject:
   - component: {fileID: 1523013979}
   - component: {fileID: 1523013978}
   - component: {fileID: 1523013977}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cubo (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1347,7 +1353,7 @@ GameObject:
   - component: {fileID: 1527622780}
   - component: {fileID: 1527622779}
   - component: {fileID: 1527622778}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cilindro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
