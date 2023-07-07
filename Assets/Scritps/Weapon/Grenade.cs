@@ -14,6 +14,8 @@ public class Grenade : MonoBehaviour
 
     bool exploded = false;
 
+    public GameObject explosionEffect;
+
     void Start()
     {
         countdown = delay;
@@ -32,6 +34,8 @@ public class Grenade : MonoBehaviour
 
     void Explode()
     {
+        Instantiate(explosionEffect, transform.position, transform.rotation);
+
         Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
 
         foreach (var rangeObjects in colliders)
