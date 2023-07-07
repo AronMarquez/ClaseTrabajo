@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shot : MonoBehaviour
+public class Gun : MonoBehaviour
 {
     public Transform spawnPoint;
 
@@ -19,8 +19,10 @@ public class Shot : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            if (Time.time > shotRateTime)
+            if (Time.time > shotRateTime && GameManager.Instance.gunAmmo > 0)
             {
+                GameManager.Instance.gunAmmo--;
+
                 GameObject newBullet;
 
                 newBullet = Instantiate(bullet,spawnPoint.position, spawnPoint.rotation);
