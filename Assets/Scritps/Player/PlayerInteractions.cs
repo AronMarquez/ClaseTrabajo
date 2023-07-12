@@ -26,4 +26,15 @@ public class PlayerInteractions : MonoBehaviour
             GetComponent<CharacterController>().enabled = true;
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("EnemyBullet"))
+        {
+            GameManager.Instance.LoseHealth(5);
+
+        }
+
+
+    }
 }
