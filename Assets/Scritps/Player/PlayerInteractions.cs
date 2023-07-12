@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class PlayerInteractions : MonoBehaviour
 {
+    public Transform StarPosition;
+
+
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("GunAmmo"))
@@ -11,6 +15,15 @@ public class PlayerInteractions : MonoBehaviour
             GameManager.Instance.gunAmmo += other.gameObject.GetComponent<AmmoBox>().ammo;
 
             Destroy(other.gameObject);
+        }
+        if (other.gameObject.CompareTag("DeathFloor"))
+        {
+            //PERDER VIDA
+            GameManager.Instance.LoseHealth(50);
+
+            GetComponent<CharacterController>().enabled = false;
+            gameObject.transform.position = StarPosition.position;
+            GetComponent<CharacterController>().enabled = true;
         }
     }
 }
