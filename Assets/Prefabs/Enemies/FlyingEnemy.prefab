@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 693974222112084455}
   - component: {fileID: 3038287059968631845}
   - component: {fileID: 8894526384352011490}
+  - component: {fileID: 7221271276470268000}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -34,6 +35,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2670781880231300258}
+  - {fileID: 5745273200645562757}
   m_Father: {fileID: 6112015853691883656}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -154,6 +156,21 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &7221271276470268000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349393863883766132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22bab51f4471e9c469cc100929a27c5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyBullet: {fileID: 2297522551240707122, guid: bcb9a908c93c03c438bb949de314365e, type: 3}
+  spawnBulletPoint: {fileID: 5745273200645562757}
+  bulletVelocity: 100
 --- !u!1 &664982517817227652
 GameObject:
   m_ObjectHideFlags: 0
@@ -691,6 +708,37 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &4315178842566531719
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5745273200645562757}
+  m_Layer: 0
+  m_Name: EnemySpawnBulletPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5745273200645562757
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4315178842566531719}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.738}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1969597104377090807}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8270993575207008727
 GameObject:
   m_ObjectHideFlags: 0
@@ -701,7 +749,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6112015853691883656}
   m_Layer: 0
-  m_Name: EnemyRanged
+  m_Name: FlyingEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
