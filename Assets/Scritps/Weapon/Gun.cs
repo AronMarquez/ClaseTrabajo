@@ -13,6 +13,15 @@ public class Gun : MonoBehaviour
 
     private float shotRateTime = 0;
 
+    private AudioSource audioSource;
+
+    public AudioClip shotSound;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
 
     // Update is called once per frame
     void Update()
@@ -21,6 +30,8 @@ public class Gun : MonoBehaviour
         {
             if (Time.time > shotRateTime && GameManager.Instance.gunAmmo > 0)
             {
+                audioSource.PlayOneShot(shotSound);
+
                 GameManager.Instance.gunAmmo--;
 
                 GameObject newBullet;
