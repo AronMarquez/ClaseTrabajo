@@ -81,4 +81,11 @@ public class AI : MonoBehaviour
         navMeshAgent.destination = player.transform.position;
 
     }
+
+    public void GrenadeImpact()
+    {
+        Destroy(gameObject);
+    }
+
+
 }
