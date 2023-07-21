@@ -26,6 +26,15 @@ public class PlayerMovement : MonoBehaviour
 
     public float sprintSpeed = 1;
 
+    public float staminaUseAmount = 5;
+
+    private StaminaBar staminaSlider;
+
+    private void Start()
+    {
+        staminaSlider = FindObjectOfType<StaminaBar>();
+    }
+
     void Update()
     {
 
@@ -68,10 +77,19 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             isSprinting = !isSprinting;
+
+            if (isSprinting == true)
+            {
+                staminaSlider.UseStamina(staminaUseAmount);
+            }
+            else
+            {
+                staminaSlider.UseStamina(0);
+            }
         }
         if (isSprinting == true)
         {
-            sprintSpeed = sprintingSpeedMultiplier;
+            sprintSpeed = sprintingSpeedMultiplier;           
         }
         else
         {
