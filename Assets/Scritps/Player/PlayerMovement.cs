@@ -30,6 +30,8 @@ public class PlayerMovement : MonoBehaviour
 
     private StaminaBar staminaSlider;
 
+    public Animator animator;
+
     private void Start()
     {
         staminaSlider = FindObjectOfType<StaminaBar>();
@@ -48,6 +50,9 @@ public class PlayerMovement : MonoBehaviour
         float X = Input.GetAxis("Horizontal");
 
         float Z = Input.GetAxis("Vertical");
+
+        animator.SetFloat("VelX",X);
+        animator.SetFloat("VelZ",Z);
 
         Vector3 move = transform.right * X + transform.forward * Z;
 
