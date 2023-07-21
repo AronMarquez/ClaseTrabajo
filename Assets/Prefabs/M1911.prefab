@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4507705807419027616}
   - component: {fileID: 502552893921660820}
   - component: {fileID: 1488888471597017468}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,8 +92,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5880847212302450618}
-  - component: {fileID: 5318034342422372870}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: SpawnPointAndGrenade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,28 +106,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 283498906590772157}
-  m_LocalRotation: {x: -0.7061621, y: -0.7061621, z: -0.036538783, w: 0.036538783}
+  m_LocalRotation: {x: -0.9986639, y: -0.0000000018626449, z: 0.0000000065992927, w: 0.051675584}
   m_LocalPosition: {x: -0.0011, y: 0.0344, z: -0.1552}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5113424023466830427}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: -174.076, y: 0, z: -90}
---- !u!114 &5318034342422372870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 283498906590772157}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c65eb1159ff56dd4cbfa1f14c3c2c989, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  throwForce: 500
-  grenadePrefab: {fileID: 6192020757319760332, guid: accb917d6f78b2d41ab3b6879edfe429, type: 3}
+  m_LocalEulerAnglesHint: {x: -174.076, y: 0, z: 0}
 --- !u!1 &754721104701490609
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,7 +125,7 @@ GameObject:
   - component: {fileID: 4574908115577581194}
   - component: {fileID: 8627427254452471091}
   - component: {fileID: 4194952854995155510}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Hammer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -223,7 +208,7 @@ GameObject:
   - component: {fileID: 6512197340715103194}
   - component: {fileID: 7217218206291443303}
   - component: {fileID: 973444765487891836}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Magazin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -304,7 +289,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2194910398251938438}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CINEMA_4D_Editor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -337,8 +322,8 @@ GameObject:
   - component: {fileID: 5405281088792355180}
   - component: {fileID: 8495554091164147734}
   - component: {fileID: 8034342049371030347}
-  - component: {fileID: 3938339215463794999}
-  m_Layer: 8
+  - component: {fileID: 1584600079146515214}
+  m_Layer: 0
   m_Name: M1911
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -391,103 +376,19 @@ MonoBehaviour:
   bullet: {fileID: 5018965090519798605, guid: 3a7ebd0ce58d88c439ac68a1cf540614, type: 3}
   shotForce: 1500
   shotRate: 0.5
-  shotSound: {fileID: 8300000, guid: 98fcdcfff687ae541a9b4250f412e5e5, type: 3}
---- !u!82 &3938339215463794999
-AudioSource:
+--- !u!114 &1584600079146515214
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3073577240797122514}
   m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 98fcdcfff687ae541a9b4250f412e5e5, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.25
-  m_Pitch: 2.5
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e1f19b31ebc77942a862ae9023ecb5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  swayAmount: 8
 --- !u!1 &4854475455549031493
 GameObject:
   m_ObjectHideFlags: 0
@@ -499,8 +400,8 @@ GameObject:
   - component: {fileID: 5113424023466830427}
   - component: {fileID: 2155256137463699951}
   - component: {fileID: 5336538091848318376}
-  m_Layer: 8
-  m_Name: Pistola
+  m_Layer: 0
+  m_Name: M1911
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -587,7 +488,7 @@ GameObject:
   - component: {fileID: 225417604941599677}
   - component: {fileID: 2996067887664998367}
   - component: {fileID: 3667562562730941151}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Slide
   m_TagString: Untagged
   m_Icon: {fileID: 0}

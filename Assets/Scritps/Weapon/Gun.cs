@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WeaponLogic : MonoBehaviour
+public class Gun : MonoBehaviour
 {
     public Transform spawnPoint;
 
@@ -30,10 +30,7 @@ public class WeaponLogic : MonoBehaviour
         {
             if (Time.time > shotRateTime && GameManager.Instance.gunAmmo > 0)
             {
-                if (audioSource != null)
-                {
-                    audioSource.PlayOneShot(shotSound);
-                }
+                audioSource.PlayOneShot(shotSound);
 
                 GameManager.Instance.gunAmmo--;
 
