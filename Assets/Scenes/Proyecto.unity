@@ -3810,7 +3810,7 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 64
-  jumpHeight: 3
+  jumpHeight: 1
   isSprinting: 0
   sprintingSpeedMultiplier: 1.5
   sprintSpeed: 2
