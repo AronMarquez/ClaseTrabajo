@@ -16,4 +16,10 @@ public class menufunciones : MonoBehaviour
         Application.Quit();
         Debug.Log("Aqui se cierra el programa");
     }
+
+    public void Creditos()
+    {
+        SceneManager.LoadScene("creditos");
+    }
+
 }
