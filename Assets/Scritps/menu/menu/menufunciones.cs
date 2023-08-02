@@ -21,5 +21,10 @@ public class menufunciones : MonoBehaviour
     {
         SceneManager.LoadScene("creditos");
     }
+    public void regresarmenu()
+    {
+        SceneManager.LoadScene("menuprincipal");
+    }
+
 
 }
